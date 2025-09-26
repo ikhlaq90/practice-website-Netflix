@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.main {
+    background-image: url(assests/img/background.jpg);
+    height: 80vh;
+   background-repeat: no-repeat;
+   background-position: center ;
+   position: relative;
+   background-size: max(1200px, 100v)
+
+}
+
+.main .box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.50;
+    background-color: black;
+    position: absolute;
+    top: 0;
+
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+  background-color: rgb(236, 236, 236);
+  justify-content: space-between;
+  height: 62px;
+
+}
+
+.navimg {
+    
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
