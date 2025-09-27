@@ -6,12 +6,17 @@
 }
 
 .main {
+      position: relative;
+   
     background-image: url(assests/img/background.jpg);
     height: 80vh;
+    width: 100%;
    background-repeat: no-repeat;
    background-position: center ;
-   position: relative;
-   background-size: max(1200px, 100v)
+ 
+   top: 0;
+  background-size: cover;
+  z-index: 0;
 
 }
 
@@ -22,7 +27,8 @@
     background-color: black;
     position: absolute;
     top: 0;
-
+    left: 0;
+    z-index: -1;
 }
 
 .nav {
@@ -30,15 +36,53 @@
   align-items: center;
   width: 80vw;
   margin: auto;
-  background-color: rgb(236, 236, 236);
+  position: relative;
   justify-content: space-between;
-  height: 62px;
+  height: 74px;
+  z-index: 10;
 
 }
+button {
+    background-color: rgb(255, 255, 255);
+}
 
-.navimg {
-    
+/* .navimg {
     width: 114px;
     position: relative;
     z-index: 10;
+    */
+
+
+/* }
+.nav button {
+    position: relative;
+    z-index: 10;
+} */
+
+.herobox {
+    display: flex;
+    height: 100%;
+
+    color: white;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+   font-family: "Martel Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;;
+  
+}
+.herobox :first-child {
+    font-weight: 700;
+    font-size: 40px;
+}
+.searchbtn {
+display: flex;
+    height: 100%;
+
+    color: white;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+
 }
